@@ -36,7 +36,6 @@ namespace RydOp_Opgave
             Console.WriteLine("---------------------------------------------------");
             Console.WriteLine("CPU data:");
             MethodManager.GetProcessorData();
-            Console.WriteLine("---------------------------------------------------");
             #endregion
 
             #region Memory information
@@ -53,7 +52,6 @@ namespace RydOp_Opgave
             Console.ReadKey();
             Console.WriteLine("---------------------------------------------------");
             MethodManager.ListAllServices();
-            Console.WriteLine("---------------------------------------------------");
             Console.ReadKey();
             #endregion
         }
