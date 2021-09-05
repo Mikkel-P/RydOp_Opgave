@@ -12,8 +12,11 @@ namespace RydOp_Opgave
         static void Main(string[] args)
         {
             #region BootDevice, UserOrgOS
+            Console.WriteLine("---------------------------------------------------");
             MethodManager.GetBootDevice();
+            Console.WriteLine("---------------------------------------------------");
             MethodManager.GetUserOrgOS();
+            Console.WriteLine("---------------------------------------------------");
             #endregion
 
             #region Hard disk information
@@ -22,6 +25,7 @@ namespace RydOp_Opgave
             Console.WriteLine("---------------------------------------------------");
             Console.WriteLine("Hard disk serial number:");
             MethodManager.GetHardDiskSerialNumber();
+            Console.WriteLine("---------------------------------------------------");
             Console.WriteLine("Hard disk meta data:");
             MethodManager.GetDiskMetaData();
             #endregion
@@ -32,6 +36,7 @@ namespace RydOp_Opgave
             Console.WriteLine("---------------------------------------------------");
             Console.WriteLine("CPU data:");
             MethodManager.GetProcessorData();
+            Console.WriteLine("---------------------------------------------------");
             #endregion
 
             #region Memory information
@@ -40,12 +45,15 @@ namespace RydOp_Opgave
             Console.WriteLine("---------------------------------------------------");
             Console.WriteLine("Memory data:");
             MethodManager.GetMemoryData();
+            Console.WriteLine("---------------------------------------------------");
             #endregion
 
             #region Windows services
             Console.WriteLine("Press 'ENTER' to list all Windows services");
             Console.ReadKey();
+            Console.WriteLine("---------------------------------------------------");
             MethodManager.ListAllServices();
+            Console.WriteLine("---------------------------------------------------");
             Console.ReadKey();
             #endregion
         }

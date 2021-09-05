@@ -31,9 +31,7 @@ namespace RydOp_Opgave
             {
                 // Access properties of the WMI object
                 Console.WriteLine("BootDevice : {0}", m["BootDevice"]);
-
             }
-            Console.WriteLine("---------------------------------------------------");
         }
         /// <summary>
         /// Finds the name of the user, organisation and operating system
@@ -50,7 +48,6 @@ namespace RydOp_Opgave
                 Console.WriteLine("Org.:\t{0}", result["Organization"]);
                 Console.WriteLine("O/S :\t{0}", result["Name"]);
             }
-            Console.WriteLine("---------------------------------------------------");
         }
         /// <summary>
         /// Displays disk name, size and free space
@@ -70,8 +67,8 @@ namespace RydOp_Opgave
                 Console.WriteLine("Disk Name : " + managementObject["Name"].ToString());
                 Console.WriteLine("FreeSpace: " + managementObject["FreeSpace"].ToString());
                 Console.WriteLine("Disk Size: " + managementObject["Size"].ToString());
-            }
                 Console.WriteLine("---------------------------------------------------");
+            }
         }
         /// <summary>
         /// Finds and displays the hard disk serial number
@@ -82,7 +79,6 @@ namespace RydOp_Opgave
 
             managementObject.Get();
             Console.WriteLine(managementObject["VolumeSerialNumber"].ToString());
-            Console.WriteLine("---------------------------------------------------");
 
             return managementObject["VolumeSerialNumber"].ToString();
         }
@@ -102,7 +98,6 @@ namespace RydOp_Opgave
                 Console.WriteLine("Total Virtual Memory: {0}KB", result["TotalVirtualMemorySize"]);
                 Console.WriteLine("Free Virtual Memory: {0}KB", result["FreeVirtualMemory"]);
             }
-            Console.WriteLine("---------------------------------------------------");
         }        
         /// <summary>
         /// Shows the current use of each core in %
@@ -117,7 +112,6 @@ namespace RydOp_Opgave
                 Console.WriteLine("Core : Usage");
                 Console.WriteLine(name + "    :     " + usage);
             }
-                Console.WriteLine("---------------------------------------------------");
         }
         /// <summary>
         /// Writes all of windows services to the console
@@ -140,7 +134,7 @@ namespace RydOp_Opgave
                         Console.WriteLine("Windows service property value: {0}", serviceProperty.Value);
                     }
                 }
-                Console.WriteLine("---------------------------------------");
+                Console.WriteLine("---------------------------------------------------");
             }
         }
         #endregion
